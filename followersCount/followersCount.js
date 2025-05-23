@@ -21,5 +21,22 @@ function checkCountValue() {
     }
 }
 
+// resets followers count to 0
+function resetCount() {
+    count = 0;
+    displayReset();
+    resetAlert();
+}
+
+// updates count in HTML file
+function displayReset() {
+    document.getElementById('countDisplay').innerHTML = count;
+}
+
+// shows reset aler
+function resetAlert() {
+    alert("Followers count has been reset");
+}
+
 
 
